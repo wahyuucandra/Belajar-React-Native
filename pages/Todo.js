@@ -126,7 +126,7 @@ const Todo = () => {
             
             <Button style={styles.button}
                 title="Submit" 
-                onPress={selectedTodo ? handleUpdateTodo : addTodo}
+                onPress={selectedTodo ? dispatch(handleUpdateTodo) : dispatch(addTodo)}
             />
         </View>
         <View>
